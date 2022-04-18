@@ -1,7 +1,7 @@
-using CompetetiveSwarm
+using CompetetiveSwarmOptim
 using Test
 
-@testset "CompetetiveSwarm.jl" begin
+@testset "CompetetiveSwarmOptim.jl" begin
    # 2D-Tests 
    result_2D = sum( [ eval_benchmark_2D( fObj ).y_min for fObj ∈ obj_functions_2D ] );
    min_2D    = sum( [ retrieveMin2D( fObj ) for fObj ∈ obj_functions_2D ] );
